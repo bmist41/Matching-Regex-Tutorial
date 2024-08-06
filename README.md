@@ -100,6 +100,6 @@ Character escapes are used to match special characters.
     - Example: C:\\\\ matches "C:\".
 
 ### About the Author
-
+The tutorial was created by Barrett, the link to the repo housing this tutorial is in this [Github Repo](https://github.com/bmist41/Matching-Regex-Tutorial) 
 
 
