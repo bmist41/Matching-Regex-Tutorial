@@ -1,24 +1,17 @@
 # SSN Matching Regex
 
-Brief description of your project and its purpose.
+This pattern described in this regex tutorial is designed to match a Social Security number format. It ensures it starts at the beginning of a line (^), has three digits (\d{3}), a hyphen (-), two digits (\d{2}), another hyphen (-), and ends with four digits (\d{4}$).
 
 ## Table of Contents
-  - [Introduction to Regex](#introduction-to-regex)
-  - [Basic Syntax](#basic-syntax)
- 
   - [Anchors](#anchors)
   - [Quantifiers](#quantifiers)
-  - [Groups and Ranges](#groups-and-ranges)
-  - [Special Characters](#special-characters)
-  - [Lookaheads and Lookbehinds](#lookaheads-and-lookbehinds)
-  - [Common Use Cases](#common-use-cases)
+  - [Grouping Constructs](#grouping-constructs)
+  - [Bracket Expressions](#bracket-expressions)
   - [Character Classes](#character-classes)
-  - [Conclusion](#conclusion)
+  - [OR Operators](#OR-operators)
+  - [Flags](#flags)
+  - [About the Author](#about-the-author)
 
-
-### Introduction to SSN Regex
-
-This pattern matches a Social Security number format, ensuring it starts at the beginning of a line (^), has three digits (\d{3}), a hyphen (-), two digits (\d{2}), another hyphen (-), and ends with four digits (\d{4}$).
 
 ### Anchors
 
@@ -98,7 +91,15 @@ The purpose of Flags are to modify the behavior of the regex pattern.
 - m: Multi-line matching.
     - Example: /^abc/m matches "abc" at the start of each line.
 
+### Character Escapes
+Character escapes are used to match special characters.
 
-### Conclusion
+- \.: Matches a literal dot.
+    - Example: \.com matches ".com".
+- \: Matches a literal backslash.
+    - Example: C:\\\\ matches "C:\".
+
+### About the Author
+
 
 
