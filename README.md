@@ -29,7 +29,7 @@ Purpose of Quantifiers are to specify the number of occurrences of a character o
 - *: Matches 0 or more occurrences.
     - Example: a* matches "", "a", "aa", etc.
 - +: Matches 1 or more occurrences.
-    Example: a+ matches "a", "aa", etc.
+    - Example: a+ matches "a", "aa", etc.
 - ?: Matches 0 or 1 occurrence.
     - Example: a? matches "" or "a".
 - {n}: Matches exactly n occurrences.
@@ -52,7 +52,7 @@ The purpose of Bracket expressions is to define a set of characters to match.
 
 - [abc]: Matches any one of the characters a, b, or c.
     - Example: [aeiou] matches any vowel.
-- [^abc]: Matches any character except a, b, or c.
+- `[^abc]` : Matches any character except a, b, or c.
     - Example: [^0-9] matches any non-digit character.
 - [a-z]: Matches any lowercase letter.
     - Example: [a-z] matches "a" to "z".
