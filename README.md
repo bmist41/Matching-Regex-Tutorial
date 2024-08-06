@@ -26,12 +26,12 @@ Purpose of Anchors are used to specify the position in the text.
 
 Purpose of Quantifiers are to specify the number of occurrences of a character or group to match.
 
+- ?: Matches 0 or 1 occurrence.
+    - Example: a? matches "" or "a".
 - *: Matches 0 or more occurrences.
     - Example: a* matches "", "a", "aa", etc.
 - +: Matches 1 or more occurrences.
     - Example: a+ matches "a", "aa", etc.
-- ?: Matches 0 or 1 occurrence.
-    - Example: a? matches "" or "a".
 - {n}: Matches exactly n occurrences.
     - Example: a{3} matches "aaa".
 - {n,}: Matches n or more occurrences.
@@ -50,17 +50,21 @@ Grouping constructs allow you to group parts of a regex pattern.
 
 The purpose of Bracket expressions is to define a set of characters to match.
 
+- [a-z]: Matches any lowercase letter.
+    - Example: [a-z] matches "a" to "z".
 - [abc]: Matches any one of the characters a, b, or c.
     - Example: [aeiou] matches any vowel.
 - `[^abc]` : Matches any character except a, b, or c.
     - Example: [^0-9] matches any non-digit character.
-- [a-z]: Matches any lowercase letter.
-    - Example: [a-z] matches "a" to "z".
 
 ### Character Classes
 
 The purpose of Character classes is to match specific sets of characters.
 
+- \s: Matches any whitespace character.
+    - Example: \s matches spaces, tabs, and line breaks.
+- \S: Matches any non-whitespace character.
+    - Example: \S matches any character except spaces, tabs, and line breaks.
 - \d: Matches any digit.
     - Example: \d matches "0" to "9".
 - \D: Matches any non-digit.
@@ -69,10 +73,7 @@ The purpose of Character classes is to match specific sets of characters.
     - Example: \w matches "a" to "z", "A" to "Z", "0" to "9", and "_".
 - \W: Matches any non-word character.
   - Example: \W matches any character except "a" to "z", "A" to "Z", "0" to "9", and "_".
-- \s: Matches any whitespace character.
-    - Example: \s matches spaces, tabs, and line breaks.
-- \S: Matches any non-whitespace character.
-    - Example: \S matches any character except spaces, tabs, and line breaks.
+
 
 ### OR operator
 The purpose of the OR operator is it allows matching one of several patterns.
@@ -94,9 +95,9 @@ The purpose of Flags are to modify the behavior of the regex pattern.
 ### Character Escapes
 Character escapes are used to match special characters.
 
-- \.: Matches a literal dot.
+- `\.`: Matches a literal dot.
     - Example: \.com matches ".com".
-- \: Matches a literal backslash.
+- `\`: Matches a literal backslash.
     - Example: C:\\\\ matches "C:\".
 
 ### About the Author
