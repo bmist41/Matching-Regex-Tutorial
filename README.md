@@ -18,9 +18,9 @@ This pattern described in this regex tutorial is designed to match a Social Secu
 Purpose of Anchors are used to specify the position in the text.
 
 - ^: Matches the start of a string.
-    -Example: ^hello matches "hello" at the start of a string.
-- $: Matches the end of a string.
-    -Example: world$ matches "world" at the end of a string.
+    -E xample: ^hello matches "hello" at the start of a string.
+- `$`: Matches the end of a string.
+    - Example: world$ matches "world" at the end of a string.
 
 ### Quantifiers
 
@@ -68,7 +68,7 @@ The purpose of Character classes is to match specific sets of characters.
 - \w: Matches any word character (alphanumeric plus underscore).
     - Example: \w matches "a" to "z", "A" to "Z", "0" to "9", and "_".
 - \W: Matches any non-word character.
-  -Example: \W matches any character except "a" to "z", "A" to "Z", "0" to "9", and "_".
+  - Example: \W matches any character except "a" to "z", "A" to "Z", "0" to "9", and "_".
 - \s: Matches any whitespace character.
     - Example: \s matches spaces, tabs, and line breaks.
 - \S: Matches any non-whitespace character.
